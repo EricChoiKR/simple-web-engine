@@ -1,0 +1,35 @@
+{
+  "name": "simple-web-engine",
+  "version": "1.0.0",
+  "description": "A simple web engine for static web pages",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:dev": "NODE_ENV=development nodemon dist/app.js",
+    "start:prod": "NODE_ENV=production nodemon dist/app.js",
+    "build": "npm run build:dev",
+    "build:dev": "NODE_ENV=development tsc --watch",
+    "build:prod": "NODE_ENV=production tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricChoiKR/simple-web-engine.git"
+  },
+  "author": "EricChoiKR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EricChoiKR/simple-web-engine/issues"
+  },
+  "homepage": "https://github.com/EricChoiKR/simple-web-engine#readme",
+  "dependencies": {
+    "config": "^2.0.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "ts-node": "^7.0.1",
+    "tsc": "^1.20150623.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.3"
+  }
+}
