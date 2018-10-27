@@ -6,6 +6,6 @@
     "*.*"
   ],
   "env": {
-    "NODE_ENV": "develeopment"
+    "NODE_ENV": "development"
   }
 }
